@@ -1,0 +1,109 @@
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+        <meta charset="UTF-8">
+         
+        <!-- If IE use the latest rendering engine -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+         
+        <!-- Set the page to the width of the device and set the zoon level -->
+        <meta name="viewport" content="width = device-width, initial-scale = 1">
+        <title>RyVis - Moms lil helper</title>
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext">
+       <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+       -->  
+        <style>
+        .jumbotron{
+            background-color:#E67E22;
+            color:white;
+            border-radius:25px;
+        }
+        /* Adds borders for tabs */
+        .tab-content {
+            border-left: 1px solid #ddd;
+            border-right: 1px solid #ddd;
+            border-bottom: 1px solid #ddd;
+            padding: 10px;
+        }
+        .nav-tabs {
+            margin-bottom: 0;
+        }
+
+        h1 {
+          color: green;
+          font-family: 'Lobster';
+        }
+        .page-header {
+             background-color: #ff9400;
+             margin-top: 0;
+              padding: 20px 20px 20px 40px;
+  }
+        </style>
+           
+        </head>
+        <body>
+        <div class="container">
+          <div class=page-header">
+            <h1>RyVis - Moms lil helper!!!</h1>
+          </div>
+        </div>
+
+     <div class="container jumbotron">
+        <div class="btn-group btn-group-lg pull-right" role="group" aria-label="..." >
+          <button type="button" class="btn btn-default btn-primary">Parent Login
+            <span class="glyphicon glyphicon-user" />
+          </button>
+          <button type="button" class="btn btn-default btn-primary">Child Login
+            <span class="glyphicon glyphicon-education" />
+          </button>
+        </div>
+      </div>
+
+   <div class="container jumbotron" style="clear:both;">
+    <table align="center">
+      <tr> <td>
+       <div class="parent-login">
+        <h2> Parent Login </h2>
+          <form action="/examples/actions/confirmation.php" method="post">
+          <div class="form-group">
+              <label for="inputEmail">Email</label>
+              <input type="email" class="form-control" id="inputEmail" placeholder="Email" required>
+          </div>
+          <div class="form-group">
+                <label for="inputPassword">Password</label>
+              <input type="password" class="form-control" id="inputPassword" placeholder="Password" required>
+          </div>
+          <div class="checkbox">
+              <label><input type="checkbox"> Remember me</label>
+          </div>
+          <button type="submit" class="btn btn-primary">Login</button>
+          </form>
+      </div>
+    </td>
+    <td>
+      <div class="child-login">
+        <h2> Child Login </h2>
+          <form action="/examples/actions/confirmation.php" method="post">
+          <div class="form-group">
+              <label for="inputEmail">Email</label>
+              <input type="email" class="form-control" id="inputEmail" placeholder="Email" required>
+          </div>
+          <div class="form-group">
+                <label for="inputPassword">Password</label>
+              <input type="password" class="form-control" id="inputPassword" placeholder="Password" required>
+          </div>
+          <div class="checkbox">
+              <label><input type="checkbox"> Remember me</label>
+          </div>
+          <button type="submit" class="btn btn-primary">Login</button>
+          </form>
+      </div>
+    </td>
+  </tr>
+    </table>
+    </div>
+
+        </body>
+
+        </html>
